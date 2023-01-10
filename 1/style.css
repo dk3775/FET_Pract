@@ -1,0 +1,477 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("https://res.cloudinary.com/hokaster/image/upload/v1480752994/bgf_svddou.jpg");
+  width: 1920px;
+  height: 1080px;
+  background-color: #003366;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  width: 100%;
+}
+
+section {
+  position: relative;
+}
+
+.section-padding {
+  padding: 200px 0px;
+}
+.container {
+  width: 100%;
+}
+
+h2 .heading-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+#titre {
+  font-family: "Anton";
+  font-size: 30px;
+  margin-left: 50px;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #ffffff;
+}
+
+#bar-menu {
+  background-color: rgba(0, 51, 102, 1);
+  position: fixed;
+  width: 100%;
+  margin-top: 0;
+  z-index: 1;
+}
+#menu {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#entete {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#home {
+  margin-top: 0;
+}
+
+nav {
+  background-color: rgba(20, 20, 200, 0);
+}
+
+#elem1 {
+  color: #ffffff;
+  font-family: "Eczar";
+  font-size: 16px;
+}
+
+#elem1:hover {
+  color: #003366;
+  border-radius: 5px 5px 5px 5px;
+}
+
+#elem2 {
+  color: #ffffff;
+  font-family: "Eczar";
+  font-size: 16px;
+}
+
+#elem2:hover {
+  color: #003366;
+  border-radius: 5px 5px 5px 5px;
+}
+
+#elem3 {
+  color: #ffffff;
+  font-family: "Eczar";
+  font-size: 16px;
+}
+
+#elem3:hover {
+  color: #003366;
+  border-radius: 5px 5px 5px 5px;
+}
+
+#elem4 {
+  color: #ffffff;
+  font-family: "Eczar";
+  font-size: 16px;
+}
+
+#elem4:hover {
+  color: #003366;
+  border-radius: 5px 5px 5px 5px;
+}
+
+#elem5 {
+  color: #ffffff;
+  font-family: "Eczar";
+  font-size: 16px;
+}
+
+#elem5:hover {
+  color: #003366;
+  border-radius: 5px 5px 5px 5px;
+}
+#elem6 {
+  color: #ffffff;
+  font-family: "Eczar";
+  font-size: 16px;
+}
+
+#elem6:hover {
+  color: #003366;
+  border-radius: 5px 5px 5px 5px;
+}
+
+#photo-profil {
+  width: 312px;
+  height: 416px;
+  margin-left: 10%;
+  border-radius: 50%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#nom {
+  font-size: 50px;
+  font-family: "Lobster";
+  color: #ffffff;
+  text-align: center;
+  margin-top: 25%;
+}
+#metier {
+  font-size: 20px;
+  font-family: "Lobster";
+  color: #ffffff;
+  text-align: center;
+  margin-top: 30px;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: "Abril Fatface";
+  color: #ffffff;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+#home {
+  display: block;
+  background-color: rgba(10, 10, 10, 0.7);
+}
+#about {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  background-color: #003366;
+}
+
+#skill {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+#skill label {
+  font-size: 16px;
+  font-family: "Eczar";
+}
+
+#resume {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  background-color: #003366;
+}
+
+#portfolio {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+#contact {
+  background-color: #000000;
+}
+
+label {
+  color: #ffffff;
+}
+
+#contact-left {
+  padding-top: 30px;
+}
+
+#contact p {
+  font-family: "Eczar";
+  color: #ffffff;
+}
+#contact h2 {
+  color: #ffffff;
+}
+#location {
+  margin: 45px 0px;
+}
+#contact ul {
+  margin-left: 5px;
+}
+#contact ul li a {
+  color: #ffffff;
+  margin-left: 5px;
+  margin-right: 0;
+}
+#contact ul li span {
+  color: #ffffff;
+}
+
+#pied {
+  background: rgba(0, 51, 102, 0.2);
+  padding: 25px 0px;
+}
+
+#pied h4 {
+  font-family: "Eczar";
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.contact-left {
+  padding-top: 30px;
+}
+.contact-left p {
+  color: #919191;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Eczar";
+  margin-left: 50px;
+}
+
+.contact-left h2 {
+  color: #fff;
+}
+.location {
+  margin: 45px 0px;
+}
+.contact-left ul {
+  margin-left: -40px;
+}
+.contact-left ul li a {
+  color: #919191;
+  margin-left: 40px;
+  font-family: "Eczar";
+}
+.contact-left ul li span {
+  color: #fff;
+  font-family: "Eczar";
+  margin-left: 50px;
+}
+
+.contact-box {
+  margin-bottom: 40px;
+}
+
+.contact-box .form-group {
+  margin-bottom: 39px;
+}
+
+.contact-box label {
+  color: #ffffff;
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: "Eczar";
+}
+
+.contact-box .form-control {
+  height: 50px;
+  border-radius: 0px;
+  background: #ffffff;
+  border: 0px;
+}
+.contact-form .btn-default {
+  background: #191f21;
+  border: 2px;
+  border-color: rgb(118, 20, 124);
+}
+
+.row {
+  margin-right: 0;
+}
+
+.social-link a i {
+  background: rgba(255, 255, 255, 1);
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  color: #003366;
+  font-size: 20px;
+  line-height: 35px;
+  margin-top: 20px;
+}
+
+.social-link a:hover i {
+  color: #fff;
+  background: rgba(0, 51, 102, 1);
+}
+
+#resume p {
+  color: #ffffff;
+  font-family: "Eczar";
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.btn-default {
+  background: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+  border: 3px solid;
+  font-size: 22px;
+  font-family: "Eczar";
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 42%;
+}
+.btn-default:hover {
+  background: #ffffff;
+  color: #003366;
+  border-color: #ffffff;
+  border: 3px solid;
+  font-size: 22px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.btn-default2 {
+  background: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+  border: 3px solid;
+  font-size: 22px;
+  font-family: "Eczar";
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 80%;
+}
+.btn-default2:hover {
+  background: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+  border: 3px solid;
+  font-size: 22px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.portfolio-box {
+  position: relative;
+  margin-bottom: 30px;
+  -webkit-transition: all 0.4s linear 0s;
+  -o-transition: all 0.4s linear 0s;
+  transition: all 0.4s linear 0s;
+}
+.image-overlay {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(46, 113, 204, 0.7);
+  top: 0px;
+  opacity: 0;
+  -webkit-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+.image-overlay a i {
+  font-size: 50px;
+  color: #fff;
+  margin-top: 120px;
+}
+.portfolio-box:hover .image-overlay {
+  opacity: 1;
+}
+
+#educ {
+  background-color: #ffffff;
+  color: #003366;
+  height: 500px;
+  margin-top: 70px;
+  font-family: "Eczar";
+  position: relative;
+}
+
+#educ h3 {
+  font-size: 30px;
+  text-decoration: bold;
+}
+
+#educ h4 {
+  text-decoration: underline;
+}
+
+#educ h5 {
+  color: #000000;
+}
+
+#educ p {
+  color: #003366;
+  font-family: "Eczar";
+  font-size: 18px;
+  margin-left: 0;
+  margin-top: 5px;
+  text-align: left;
+}
+
+#exp {
+  background-color: #ffffff;
+  color: #003366;
+  height: 500px;
+  margin-top: 70px;
+  font-family: "Eczar";
+  position: relative;
+}
+
+#exp h3 {
+  font-size: 30px;
+  text-decoration: bold;
+}
+
+#exp h4 {
+  text-decoration: underline;
+}
+
+#exp h5 {
+  color: #000000;
+}
+
+#exp p {
+  color: #003366;
+  font-family: "Eczar";
+  font-size: 18px;
+  margin-left: 0;
+  text-align: left;
+}
+
+.blk {
+  margin-top: 10px;
+}
+
+.blk p {
+  color: #003366;
+  font-size: 14px;
+}
+
+#aprop {
+  font-family: "Eczar";
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+}
