@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 3</title>
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var age = document.getElementById("age").value;
+            if (name == "" || age == "") {
+                alert("Please fill all the fields");
+            }
+            if (age < 18) {
+                document.getElementById("printer").value = "You are not eligible to vote";
+            }
+            else {
+                document.getElementById("printer").value = "You are eligible to vote";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>Enter Name : </td>
+                <td><input type="text" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td>Enter Age : </td>
+                <td><input type="number" name="age" id="age"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Submit" onclick="validateForm()"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="printer"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
