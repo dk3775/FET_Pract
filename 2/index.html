@@ -5,10 +5,325 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Practical 2 - Music Store Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
+
+    <div class="hero">
+        <div class="navbar">
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#genre">GENRE</a></li>
+                <li><a href="#year">YEAR</a></li>
+                <li><a href="#singer">SINGER</a></li>
+                <li><a href="#album">ALBUM</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 left">
+                        <h1>THE <br> REAL <br> MUSIC</h1>
+                    </div>
+                    <div class="col-md-5 right">
+                        <div class="card bg-transparent  text-white text-center" style="width: 18rem;">
+                            <img src="images/img.webp" class="card-img-top" alt="..." width="100%">
+                            <div class="card-body">
+                                <h5 class="card-title light">Don't Let Me Down</h5>
+                                <p id="prevnext" style="font-size: small;"></p>
+                                <img id="prevb"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAWVJREFUaEPtmOGNwjAMRsMSXo9jM9iEebLEnSJRqQoJtp99opXS3/3c9+w2iXopJ78uJ+cvS+DbE1wTWBMIdmC9QsEGhuNrAqMW1lrvpZRfEbl5Wkxy6RN4QVxf4HerBM2lCnQQW/NVCZprD0gTmECoEjS3FU4RUCDasx4i8tN/DzS3rxMWoBA01zchJEAhaG60omEBCkFzs+UYCVAImvu0l7gFKATNaRuhS4BC0JwG79oHKATNWeDNAhSC5qzwJgEKQXMe+CyB4VnHIKCekSwypo+YwtCcBdx9FqIwNGeVME1gK0ZhaM4i4RJoBSkMzWkSboGjSSCBI0lggaNIhASOIBEW+LZEioBB4iYi7V/R26WsTtOceyPTlrMPEirERELNmc5CFvD9PR2MCWIgb86lvUKdxLOU0g5rw9dm1pRaqzv3LwLeqUXuXwKR7mVk1wQyuhipsSYQ6V5Gdk0go4uRGqefwB/1ihhA7aaPsAAAAABJRU5ErkJggg==" />
+                                <img src="images/play.png" id="icon">
+                                <img id="nextb"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAW1JREFUaEPtl8ENAiEQRccOPFGHJdiJWplagSXYD5ctYA8aEjYxKyx/PptljHjmz77HQBh38uO/3Y/zSxdo3cHegd6Byh3oR6hyA6vj/9UB7/1NRF7OuYtm69gc8g24AxHiFIveUAk2h8CHNZDADGKqXZRgcyg8JJCBKEqwOQ38GgKhRrITBYFsbnWBUJCFYXMaCegOWJaABaxKqAQsSqgFrElQApYkaAErElUCFiSqBVpLbCVwd86d5w8U8NAlc591qgVYCDY334QqARaCzaVGDFqAhWBzufmIEmAh2NzScKcSGIZhP47jQ0SOC0W/Lh6bQ6ZSWCBCPEXkQMCrcwg89IcmLLIKDwlYhi8KWIcvCsQxIbyg18yZzL6U3nsqh579aR10iTMwxWeezWkkIIFEJ4rwE8RMAs6hErDAh8QxNZgtfTBKqHOIhEoAKbj1mi6w9Y6vOk63hofeAQuQq02jFmX6JW7dld6B1h14A1fUNEBienjgAAAAAElFTkSuQmCC" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="services" class="services_wrapper">
+        <div class="container">
+            <!-- Genre Row -->
+            <div class="row">
+                <div class="col-sm-12 text-center mb-5">
+                    <br> <br>
+                    <h2 id="genre">GENRE!!</h2>
+                    <p>Explore our collection of songs by genre, including pop, rock, hip-hop, and jazz.</p>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4 ">
+                    <div class="card rounded-0 border text-center py-5 px-3">
+                        <a href="#">
+                            <h5 class="text-uppercase mt-4 mb-3">POP</h5>
+                        </a>
+                        <p>Pop music is a genre characterized by simple, catchy melodies, upbeat rhythms, and relatable
+                            lyrics.</p>
+                        <button type="submit" class="btn btn-outline-secondary"
+                            onclick="window.location='#'">Explore</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4 ">
+                    <div class="card rounded-0 border text-center py-5 px-3">
+                        <a href="#">
+                            <h5 class="text-uppercase mt-4 mb-3">ROCK</h5>
+                        </a>
+                        <p>Rock music is a genre characterized by heavy use of electric guitars, drums, and powerful
+                            vocals.</p>
+                        <button type="submit" class="btn btn-outline-secondary"
+                            onclick="window.location='#'">Explore</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 mb-4 ">
+                    <div class="card rounded-0 border text-center py-5 px-3">
+                        <a href="#">
+                            <h5 class="text-uppercase mt-4 mb-3">HIP-HOP</h5>
+                        </a>
+                        <p>Hip-Hop is a genre characterized by its use of rhyming verse, spoken word poetry, and beats.
+                        </p>
+                        <button type="submit" class="btn btn-outline-secondary"
+                            onclick="window.location='#'">Explore</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 mb-4 ">
+                    <div class="card rounded-0 border text-center py-5 px-3">
+                        <a href="#">
+                            <h5 class="text-uppercase mt-4 mb-3">JAZZ</h5>
+                        </a>
+                        <p>Jazz is characterized by improvisation, rhythms, and the use of various
+                            musical forms such as the
+                            blues and swing.
+                        </p>
+                        <button type="submit" class="btn btn-outline-secondary"
+                            onclick="window.location='#'">Explore</button>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <!-- Year Row -->
+            <div class="row">
+                <div class="col-sm-12 text-center mb-5">
+                    <br> <br>
+                    <h2 id="year">YEAR!!</h2>
+                    <p>Discover new music from recent years, including 1990, 2000, 2010 and 2020.</p>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4 ">
+                    <div class="card rounded-0 border text-center py-5 px-3">
+                        <a href="#">
+                            <h5 class="text-uppercase mt-4 mb-3">1990</h5>
+                        </a>
+                        <p>Music of 1990 was characterized by the emergence of new genres such as heavy metal and
+                            progressive rock, as well as the
+                            continuation of popular styles such as rock, pop, and soul.</p>
+                        <button type="submit" class="btn btn-outline-secondary"
+                            onclick="window.location='#'">Explore</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4 ">
+                    <div class="card rounded-0 border text-center py-5 px-3">
+                        <a href="#">
+                            <h5 class="text-uppercase mt-4 mb-3">2000</h5>
+                        </a>
+                        <p>Music of 2000 was characterized by a diverse range of styles, including pop, hip-hop, R&B,
+                            rock, and electronic dance
+                            music, featuring a mix of established and emerging artists and a blend of traditional and
+                            new technologies.</p>
+                        <button type="submit" class="btn btn-outline-secondary"
+                            onclick="window.location='#'">Explore</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4 ">
+                    <div class="card rounded-0 border text-center py-5 px-3">
+                        <a href="#">
+                            <h5 class="text-uppercase mt-4 mb-3">2010</h5>
+                        </a>
+                        <p>The music of the 2010s was marked by a diverse range of styles and trends, including the rise
+                            of streaming platforms and
+                            the popularity of genres such as hip-hop, pop, and electronic dance music (EDM).</p>
+                        <button type="submit" class="btn btn-outline-secondary"
+                            onclick="window.location='#'">Explore</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4 ">
+                    <div class="card rounded-0 border text-center py-5 px-3">
+                        <a href="#">
+                            <h5 class="text-uppercase mt-4 mb-3">2020</h5>
+                        </a>
+                        <p>Music of 2020 features a diverse blend of styles and artists, utilizing both traditional and
+                            new technologies, and
+                            includes a mix of established and emerging artists.</p>
+                        <button type="submit" class="btn btn-outline-secondary"
+                            onclick="window.location='#'">Explore</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Singer Row -->
+            <div class="row">
+                <div class="col-sm-12 text-center mb-5">
+                    <br> <br>
+                    <h2 id="singer">SINGER!!</h2>
+                    <p>Find your favorite songs by popular singers like Adele, Bruce Springsteen, and Beyoncé.</p>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 ">
+                    <div class="card rounded-0 border text-center py-5 px-3">
+                        <a href="#">
+                            <h5 class="text-uppercase mt-4 mb-3">Adele</h5>
+                        </a>
+                        <p>Adele is a British singer-songwriter who first rose to fame in 2008 with her debut album,
+                            "19." She is known for her
+                            powerful vocals, emotive lyrics, and a mix of pop, soul, and R&B influences.</p>
+                        <button type="submit" class="btn btn-outline-secondary"
+                            onclick="window.location='#'">Explore</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 ">
+                    <div class="card rounded-0 border text-center py-5 px-3">
+                        <a href="#">
+                            <h5 class="text-uppercase mt-4 mb-3">Bruce Springsteen</h5>
+                        </a>
+                        <p>Bruce Springsteen is an American singer-songwriter and musician who first rose to fame in the
+                            1970s with his band, the E
+                            Street Band. He is known for his poetic lyrics, socially conscious themes, and a mix of
+                            rock, folk, and Americana
+                            influences.</p>
+                        <button type="submit" class="btn btn-outline-secondary"
+                            onclick="window.location='#'">Explore</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 ">
+                    <div class="card rounded-0 border text-center py-5 px-3">
+                        <a href="#">
+                            <h5 class="text-uppercase mt-4 mb-3">Beyoncé</h5>
+                        </a>
+                        <p>Beyoncé is an American singer, songwriter, and actress who first rose to fame in the late
+                            1990s as the lead singer of
+                            the R&B group Destiny's Child. She is known for her powerful vocals, dynamic stage presence,
+                            and a mix of R&B, pop, and
+                            hip-hop influences.</p>
+                        <button type="submit" class="btn btn-outline-secondary"
+                            onclick="window.location='#'">Explore</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Album Row -->
+            <div class="row">
+                <div class="col-sm-12 text-center mb-5">
+                    <br> <br>
+                    <h2 id="singer">ALBUM!!</h2>
+                    <p>Listen to some of the most popular albums of all time, including Hello, Born to Run, and
+                        Lemonade.</p>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 ">
+                    <div class="card rounded-0 border text-center py-5 px-3">
+                        <a href="#hello">
+                            <h5 class="text-uppercase mt-4 mb-3">Hello</h5>
+                        </a>
+                        <p>Adele's "Hello" is a melancholic, soul-infused pop song that deals with themes of regret,
+                            nostalgia, and longing.</p>
+                        <button type="submit" class="btn btn-outline-secondary"
+                            onclick="window.location='#'">Explore</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 ">
+                    <div class="card rounded-0 border text-center py-5 px-3">
+                        <a href="#born">
+                            <h5 class="text-uppercase mt-4 mb-3">Born to Run</h5>
+                        </a>
+                        <p>Bruce Springsteen's "Born to Run" is an anthemic, epic rock album that deals with themes of
+                            youthful rebellion,
+                            escape, and the American Dream.</p>
+                        <button type="submit" class="btn btn-outline-secondary"
+                            onclick="window.location='#'">Explore</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 ">
+                    <div class="card rounded-0 border text-center py-5 px-3">
+                        <a href="#lemonade">
+                            <h5 class="text-uppercase mt-4 mb-3">Lemonade</h5>
+                        </a>
+                        <p>Beyoncé's "Lemonade" is a critically acclaimed, genre-defying, conceptual album that deals
+                            with themes of infidelity,
+                            female empowerment, and personal growth.</p>
+                        <button type="submit" class="btn btn-outline-secondary"
+                            onclick="window.location='#'">Explore</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--Services section exit -->
+
+    <audio id="mysong">
+        <source src="images/imgaud.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+
+        var mysong = document.getElementById("mysong");
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function () {
+            if (mysong.paused) {
+                mysong.play();
+                icon.src = "images/pause.png";
+            } else {
+                mysong.pause();
+                icon.src = "images/play.png";
+            }
+        }
+
+        prevb.onclick = function () {
+            document.getElementById("prevnext").innerHTML = "Subscribe Now to play more songs";
+        }
+        nextb.onclick = function () {
+            document.getElementById("prevnext").innerHTML = "Subscribe Now to play more songs";
+        }
+
+    </script>
+    <footer class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: info@musicstore.com</p>
+                    <p>Phone: +91 9191919191</p>
+                    <p>Address: 123 Music Street, Music City, India</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Registration</a></li>
+                        <li><a href="#">In-store Purchases</a></li>
+                        <li><a href="#">Subscription Packages</a></li>
+                        <li><a href="#">Trial Options</a></li>
+                    </ul>
+                </div>
+                <link rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 

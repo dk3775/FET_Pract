@@ -2,12 +2,30 @@
 <html lang="en">
 
 <head>
-  <script>
-    alert("Hello World");
-    [1, 2].forEach(alert);
-  </script>
+  <script src="https://code.jquery.com/jquery-3.6.3.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.js"
+    integrity="sha512-nO7wgHUoWPYGCNriyGzcFwPSF+bPDOR+NvtOYy2wMcWkrnCNPKBcFEkU80XIN14UVja0Gdnff9EmydyLlOL7mQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
-<body></body>
+<body>
+  <script>
+    const settings = {
+      "async": true,
+      "crossDomain": true,
+      "url": "https://matchilling-chuck-norris-jokes-v1.p.rapidapi.com/jokes/random",
+      "method": "GET",
+      "headers": {
+        "accept": "application/json",
+        "X-RapidAPI-Key": "9d8888a88amsha2dc8128aafbe29p121216jsnf98e78e474ff",
+        "X-RapidAPI-Host": "matchilling-chuck-norris-jokes-v1.p.rapidapi.com"
+      }
+    };
+
+    $.ajax(settings).done(function (response) {
+      console.log(response.value.replace("Chuck Norris", "Your Mom"));
+    });
+  </script>
+</body>
 
 </html>
