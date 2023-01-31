@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 6</title>
+</head>
+
+<body>
+    <script>
+        let mixedArr = [NaN, 0, 15, false, -22, '', undefined, 47, null];
+        let numArr = [];
+
+        function filterArray(arr) {
+            for (let i = 0; i < arr.length; i++) {
+                if (typeof arr[i] == "number" && !isNaN(arr[i]) && arr[i] != 0) {
+                    numArr.push(arr[i]);
+                }
+            }
+            return numArr;
+        }
+        numArr = filterArray(mixedArr);
+        shuffle(numArr);
+
+        document.write("The filtered array is: " + numArr);
+    </script>
+</body>
+
+</html>

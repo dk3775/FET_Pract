@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 5</title>
+</head>
+
+<body>
+    <script>
+        let emp = {
+            dhyey: {
+                name: "Dhyey",
+                workingDays: 20
+            },
+            harsh: {
+                name: "Harsh",
+                workingDays: 25
+            },
+            aniket: {
+                name: "Aniket",
+                workingDays: 30
+            },
+            vishwa: {
+                name: "Vishwa",
+                workingDays: 35
+            },
+            shan: {
+                name: "Shan",
+                workingDays: 40
+            }
+        };
+
+        function print(emp) {
+            for (let key in emp) {
+                document.write(emp[key].name + " has worked for " + emp[key].workingDays + " days." + " and earned " + emp[key].workingDays * 100 + " rupees." + "\n");
+            }
+        }
+        console.log(emp.dhyey.name);
+    </script>
+
+    <input type="button" value="Print" onclick="print(emp)">
+</body>
+
+</html>
