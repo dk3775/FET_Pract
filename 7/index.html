@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 7</title>
+</head>
+
+<body>
+    <!-- <script type="module" src="main.js"></script>
+     -->
+    <script type="module">
+        import { final } from "./main.js";
+        window.final = final;
+    </script>
+    <div id="main">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="pass">Password:</label>
+        <input type="text" id="pass" name="pass" required><br><br>
+        <button id="sub" name="Submit" onclick="final()">Submit</button>
+    </div>
+    <br>
+</body>
+
+</html>
