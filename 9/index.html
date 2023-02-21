@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 9</title>
+</head>
+
+<body>
+    <div id="list1"><a href="#">Redbull</a>
+        <img id="submenu1" style="display: none;height: 50vh;" src="rb (1).jpg">
+    </div>
+    <div id="list2"><a href="#">Ferrari</a>
+        <img id="submenu2" style="display: none;height: 50vh;" src="ferrari.jpg">
+    </div>
+    <div id="list3"><a href="#">Mercedes</a>
+        <img id="submenu3" style="display: none;height: 50vh;" src="mercedes.jpg">
+    </div>
+    <div id="list4"><a href="#">McLaren</a>
+        <img id="submenu4" style="display: none;height: 50vh;" src="mclaren.jpg">
+    </div>
+    <div id="list5"><a href="#">Aston Martin</a>
+        <img id="submenu5" style="display: none;height: 50vh;" src="astonmartin.jpeg">
+    </div>
+</body>
+<script>
+    // use event handling to view hidden block
+
+    let div1 = document.getElementById("list1");
+    let div2 = document.getElementById("list2");
+    let div3 = document.getElementById("list3");
+    let div4 = document.getElementById("list4");
+    let div5 = document.getElementById("list5");
+
+    let submenu1 = document.getElementById("submenu1");
+    let submenu2 = document.getElementById("submenu2");
+    let submenu3 = document.getElementById("submenu3");
+    let submenu4 = document.getElementById("submenu4");
+    let submenu5 = document.getElementById("submenu5");
+
+    let c1 = 0;
+    div1.addEventListener("click", function () {
+        if (c1 == 0) {
+            submenu1.style.display = "block";
+            submenu2.style.display = "none";
+            submenu3.style.display = "none";
+            submenu4.style.display = "none";
+            submenu5.style.display = "none";
+            c1 = 1;
+            c2 = c3 = c4 = c5 = 0;
+        } else {
+            submenu1.style.display = "none";
+            c1 = 0;
+        }
+    });
+
+    let c2 = 0;
+    div2.addEventListener("click", function () {
+        if (c2 == 0) {
+            submenu2.style.display = "block";
+            submenu1.style.display = "none";
+            submenu3.style.display = "none";
+            submenu4.style.display = "none";
+            submenu5.style.display = "none";
+            c1 = c3 = c4 = c5 = 0;
+            c2 = 1;
+        } else {
+            submenu2.style.display = "none";
+            c2 = 0;
+        }
+    });
+
+    let c3 = 0;
+    div3.addEventListener("click", function () {
+        if (c3 == 0) {
+            submenu3.style.display = "block";
+            submenu1.style.display = "none";
+            submenu2.style.display = "none";
+            submenu4.style.display = "none";
+            submenu5.style.display = "none";
+            c1 = c2 = c4 = c5 = 0;
+            c3 = 1;
+        } else {
+            submenu3.style.display = "none";
+            c3 = 0;
+        }
+    });
+
+    let c4 = 0;
+    div4.addEventListener("click", function () {
+        if (c4 == 0) {
+            submenu4.style.display = "block";
+            submenu1.style.display = "none";
+            submenu2.style.display = "none";
+            submenu3.style.display = "none";
+            submenu5.style.display = "none";
+
+            c1 = c2 = c3 = c5 = 0;
+            c4 = 1;
+        } else {
+            submenu4.style.display = "none";
+            c4 = 0;
+        }
+    });
+
+    let c5 = 0;
+    div5.addEventListener("click", function () {
+        if (c5 == 0) {
+            submenu5.style.display = "block";
+            submenu1.style.display = "none";
+            submenu2.style.display = "none";
+            submenu3.style.display = "none";
+            submenu4.style.display = "none";
+            c1 = c2 = c3 = c4 = 0;
+            c5 = 1;
+        } else {
+            submenu5.style.display = "none";
+            c5 = 0;
+        }
+    });
+
+</script>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 8</title>
+</head>
+
+<body>
+    <script>
+        var cakecake = new Promise((resolve, reject) => {
+            var HealthyOrNot = prompt("Is Kayo Healthy? (Yes or No)", "Yes");
+            if (HealthyOrNot == "Yes") {
+                var NumOfCakes = parseInt(prompt("How many cakes do you want to eat?", "1"));
+                resolve("Woohoo! Kayo is Healthy and we have " + NumOfCakes + " cakes!");
+            } else {
+                reject(new Error("Kayo is not Healthy, so we can't eat cake!"));
+            }
+        }).then((message) => {
+            alert(message);
+        }).catch((error) => {
+            alert(error);
+        }).finally(() => {
+            alert("We still have a party!");
+        });
+    </script>
+</body>
+
+</html>
